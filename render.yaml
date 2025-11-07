@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: youtube-project-frontend
+    env: static
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: "dist"
+    autoDeploy: true
+    pullRequestPreviewsEnabled: true
